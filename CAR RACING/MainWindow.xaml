@@ -1,0 +1,52 @@
+﻿<Window x:Class="CAR_RACING.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CAR_RACING"
+        mc:Ignorable="d"
+        Title="RACING GAME" Height="517" Width="525">
+    <Window.Resources>
+        <Storyboard x:Key="FadeIn">
+            <DoubleAnimation Storyboard.TargetName="EndScreen"
+                             Storyboard.TargetProperty="Opacity"
+                             From="0" To="1" Duration="0:0:2"/>
+
+        </Storyboard>
+        
+    </Window.Resources>
+    <Grid>
+        <Canvas Background="#353839" Name="myCanvas" Focusable="True" KeyDown="OnKeyDown" KeyUp="OnKeyUp">
+
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="-152"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="10"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="176"/>
+        <Rectangle Height="106" Width="20" Fill="White" Tag="roadMarks" Canvas.Left="237" Canvas.Top="348"/>
+
+        <Rectangle Tag="Car" Height="80" Width="55" Fill="Blue" Canvas.Left="90" Canvas.Top="56"/>
+        <Rectangle Tag="Car" Height="80" Width="55" Fill="Purple" Canvas.Left="381" Canvas.Top="286"/>
+        <Rectangle Name="Player" Height="80" Width="54" Fill="Yellow" Canvas.Left="220" Canvas.Top="401" RenderTransformOrigin="-2.52,1.866"/>
+
+        <Label Name="scoreText" Content="00 seconds" FontSize="18" FontWeight="Bold"/>
+
+
+
+
+
+
+
+        </Canvas>
+        <Grid x:Name="EndScreen" Background="Black" Visibility="Collapsed">
+            <TextBlock Text="GAME OVER!!" Foreground="Red" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Jokerman" Margin="0,0,0,75"/>
+            <TextBlock x:Name="SurvivalTimeText" Text="Survived: 0 Seconds" Foreground="Wheat" FontSize="24" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Jokerman"/>
+            <TextBlock Text="Press ENTER to Restart" Foreground="Wheat" FontSize="22" Margin="0,0,0,100" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Jokerman"/>
+          
+
+
+
+        </Grid>
+    </Grid>
+
+
+
+</Window>

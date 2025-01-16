@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>CAR_RACING</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ASSETS\1.png" />
+    <None Remove="ASSETS\car1.png" />
+    <None Remove="ASSETS\car2.png" />
+    <None Remove="ASSETS\car3.png" />
+    <None Remove="ASSETS\car4.png" />
+    <None Remove="ASSETS\car5.png" />
+    <None Remove="ASSETS\car6.png" />
+    <None Remove="ASSETS\MyCar.png" />
+    <None Remove="ASSETS\playerImage.png" />
+    <None Remove="ASSETS\powermode1.png" />
+    <None Remove="ASSETS\powermode2.png" />
+    <None Remove="ASSETS\powermode3.png" />
+    <None Remove="ASSETS\powermode4.png" />
+    <None Remove="ASSETS\star.png" />
+    <None Remove="ASSETS\TRBRYcars [Converted] pickup.svg" />
+    <None Remove="ASSETS\YellowBuggy_3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="ASSETS\1.png" />
+    <Resource Include="ASSETS\car1.png" />
+    <Resource Include="ASSETS\car2.png" />
+    <Resource Include="ASSETS\car3.png" />
+    <Resource Include="ASSETS\car4.png" />
+    <Resource Include="ASSETS\car5.png" />
+    <Resource Include="ASSETS\car6.png" />
+    <Resource Include="ASSETS\MyCar.png" />
+    <Resource Include="ASSETS\playerImage.png" />
+    <Resource Include="ASSETS\powermode1.png" />
+    <Resource Include="ASSETS\powermode2.png" />
+    <Resource Include="ASSETS\powermode3.png" />
+    <Resource Include="ASSETS\powermode4.png" />
+    <Resource Include="ASSETS\star.png" />
+    <Resource Include="ASSETS\TRBRYcars [Converted] pickup.svg" />
+    <Resource Include="ASSETS\YellowBuggy_3.png" />
+  </ItemGroup>
+
+</Project>
