@@ -31,4 +31,4 @@
 
 
 
-Credits to Moo for the assets and inspiration.
+Credits to Moo ICT for the assets and inspiration.
